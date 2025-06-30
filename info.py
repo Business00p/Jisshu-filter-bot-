@@ -16,8 +16,8 @@ def is_enabled(value, default):
 
 # Main
 SESSION = environ.get("SESSION", "Media_search")
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
+API_ID = int(environ.get("API_ID", "27372121"))
+API_HASH = environ.get("API_HASH", "0b368e65ed8b23e5c2c6501b19c95cf2")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 PORT = environ.get("PORT", "8082")
 
@@ -29,18 +29,18 @@ ADMINS = [
 OWNER_USERNAME = environ.get(
     "OWNER_USERNAME", "IM_JISSHU"
 )  # without @ or https://t.me/
-USERNAME = environ.get("USERNAME", "")  # ADMIN USERNAME
+USERNAME = environ.get("USERNAME", "TvShOw076")  # ADMIN USERNAME
 
 # Database Channel
 CHANNELS = [
     int(ch) if id_pattern.search(ch) else ch
-    for ch in environ.get("CHANNELS", "").split()
+    for ch in environ.get("CHANNELS", "-1002476582891").split()
 ]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", ""))
+AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "-1002269642690"))
 AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", ""))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002183023577"))
 LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
 
@@ -61,7 +61,7 @@ REQUEST_CHANNEL = (
     if request_channel and id_pattern.search(request_channel)
     else None
 )
-MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1001864434358"))
+MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002680006629"))
 
 # Added Link Here Not Id
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")
