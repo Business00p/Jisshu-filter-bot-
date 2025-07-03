@@ -27,7 +27,7 @@ ADMINS = [
     for admin in environ.get("ADMINS", "5672857559").split()
 ]
 OWNER_USERNAME = environ.get(
-    "OWNER_USERNAME", "IM_JISSHU"
+    "OWNER_USERNAME", "TvShOw076"
 )  # without @ or https://t.me/
 USERNAME = environ.get("USERNAME", "TvShOw076")  # ADMIN USERNAME
 
@@ -45,7 +45,7 @@ LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://tolkkirshencw19938:VwnmQUKBlBt228lh@cluster0.axiylvh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
@@ -68,7 +68,7 @@ SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")
 MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "")
 
 # Verification
-IS_VERIFY = is_enabled("IS_VERIFY", True)
+IS_VERIFY = is_enabled("IS_VERIFY", False)
 # ---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
